@@ -31,32 +31,29 @@ class App extends React.Component {
     return (
         <div className="App">
           <div className='layout'>
-            <div className="logo">
-              <img src={`${logo}`}/>
+            <div className="logo-contact">
+              <img className="logo" src={`${logo}`}/>
+              <button className='contact'><p>Contact Us!</p></button>
             </div>
             <div className='menu'>
               {content.pages.map((item, index) => (
-                <div>
-                  <button id={index} onClick={this.setMain}>
-                    {item.title}
-                  </button>
-                </div>
+                <div id={index} onClick={this.setMain}>{item.title}</div>
               ))}
             </div>
-            <div className='contact'>
-              <button className='Rectangle'>Contact Us</button>
-            </div>
-          </div>
-          <div className='page'>
-            <div className="headline">
-              {page.blocks[0].headline}
-            </div>
-            <div className="subhead">
-              {page.blocks[0].subhead}
-            </div>
-            <div className="Bg">
-              <div className="cta">
-                {page.blocks[0].cta}
+            <div className='page'>
+              <div className='page-header'>
+                <div className="page-headline">
+                  {headline}
+                </div>
+                <div className="page-subhead">
+                  {subhead}
+                </div>
+              </div>
+              <div className="Bg">
+                <div className="cta">
+                  {cta}
+                </div>
+                <div className='LETS-TALK'>Let's Talk!</div>
               </div>
             </div>
           </div>
