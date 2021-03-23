@@ -1,39 +1,100 @@
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  /* background-image: url('./backgrounds/slide_one.jpg'); */
+  min-width: 320px;
+  max-width: 1920px;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1.179rem 8.125rem 0 7.938rem;
+  object-fit: contain;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url('./backgrounds/slide_one.jpg');
+  background-size: ;
 }
 
-.App-link {
-  color: #61dafb;
+.abc {
+  width: 4.728rem;
+  height: 2.363rem;
+  margin: 0 44.043rem 15.958rem 0.166rem;
+  object-fit: contain;
+  background-color: var(--white);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Rectangle {
+  width: 8.688rem;
+  height: 2.625rem;
+  margin: 0 0 0.313rem 60.5rem;
+  padding: 0.75rem 0.063rem 0.75rem 0;
+  border: solid 1px var(--white);
 }
+
+.menu {
+  width: 4.563rem;
+  height: 4.875rem;
+  margin: 0.313rem 59.875rem 0 0;
+  font-family: HelveticaNeue;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.86;
+  letter-spacing: normal;
+  color: var(--white);
+}
+.menu .text-style-1 {
+  color: #ffc004;
+}
+
+
+.headline {
+  width: 38.25rem;
+  height: 17rem;
+  margin: 10.125rem 10.688rem 2.938rem 0;
+  font-family: HelveticaNeue;
+  font-size: 5.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -2.2px;
+  color: var(--white);
+  overflow: hidden;
+}
+
+.subhead {
+  width: 22.5rem;
+  height: 14.188rem;
+  margin: 11.563rem 2.5rem 4.313rem 10.688rem;
+  font-family: HelveticaNeue;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.86;
+  letter-spacing: normal;
+  color: var(--white);
+  overflow: hidden;
+}
+
+.Bg {
+  width: 73.75rem;
+  height: 11.188rem;
+  margin: 2.938rem 0 0 0.188rem;
+  padding: 4.625rem 8.5rem 4.563rem 4.813rem;
+  background-color: var(--white);
+  
+}
+
+.cta {
+  width: 30.188rem;
+  height: 2rem;
+  margin: 0 13.75rem 0 0;
+  font-family: HelveticaNeue;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: -0.63px;
+  color: #000000;
+  overflow: hidden;
+}
+

@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import content from './content.json';
+import logo from './abc_logo.svg';
 import backgrounds from './backgrounds/slide_one.jpg';
 
 class App extends React.Component {
@@ -18,6 +19,7 @@ class App extends React.Component {
     var newMain = e.target.id;
     this.setState({main:newMain})
   }
+
   render() {
     var { content, main } = this.state;
     var { pages } = content;
@@ -27,25 +29,38 @@ class App extends React.Component {
     var {type, headline, subhead, cta, background} = block;
     console.log(background)
     return (
-      <div className="App">
-        <nav>
-          {content.pages.map((item, index) => (
-            <div>
-              <button id={index} className={item.title} onClick={this.setMain}>
-                {item.title}
-              </button>
+        <div className="App">
+          <div className='layout'>
+            <div className="logo">
+              <img src={`${logo}`}/>
             </div>
-          ))}
-        </nav>
-        <header className="App-header">
-          {page.title}
-          <br></br>
-          {page.blocks[0].subhead}
-        </header>
-        <div>
-
+            <div className='menu'>
+              {content.pages.map((item, index) => (
+                <div>
+                  <button id={index} onClick={this.setMain}>
+                    {item.title}
+                  </button>
+                </div>
+              ))}
+            </div>
+            <div className='contact'>
+              <button className='Rectangle'>Contact Us</button>
+            </div>
+          </div>
+          <div className='page'>
+            <div className="headline">
+              {page.blocks[0].headline}
+            </div>
+            <div className="subhead">
+              {page.blocks[0].subhead}
+            </div>
+            <div className="Bg">
+              <div className="cta">
+                {page.blocks[0].cta}
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
     );
   }
 }
