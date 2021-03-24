@@ -15,7 +15,7 @@ class App extends React.Component {
   }
   
   setMain(e) {
-    console.log(backgrounds)
+    var oldMain = document.getElementById(this.state.main);
     var newMain = e.target.id;
     this.setState({main:newMain})
   }
@@ -27,34 +27,31 @@ class App extends React.Component {
     var {title, slug, blocks} = page;
     var block = blocks[0];
     var {type, headline, subhead, cta, background} = block;
-    console.log(background)
     return (
         <div className="App">
-          <div className='layout'>
-            <div className="logo-contact">
-              <img className="logo" src={`${logo}`}/>
-              <button className='contact'><p>Contact Us!</p></button>
-            </div>
-            <div className='menu'>
-              {content.pages.map((item, index) => (
-                <div id={index} onClick={this.setMain}>{item.title}</div>
-              ))}
-            </div>
-            <div className='page'>
-              <div className='page-header'>
-                <div className="page-headline">
-                  {headline}
-                </div>
-                <div className="page-subhead">
-                  {subhead}
-                </div>
+          <div className='Layout'>
+              <img className="Logo" src={`${logo}`}/>
+              <button className="Contact">Contact Us</button>
+              <div className='Menu'>
+                {content.pages.map((item, index) => (
+                  <a id={index} href={`#${item.title}`} onClick={this.setMain}>{item.title}</a>
+                ))}
               </div>
-              <div className="Bg">
-                <div className="cta">
-                  {cta}
-                </div>
-                <div className='LETS-TALK'>Let's Talk!</div>
-              </div>
+          </div>
+          <div className='Page'>
+            <div className='Page-header'>
+              <p className="Page-headline">
+                {headline}
+              </p>
+              <p className="Page-subhead">
+                {subhead}
+              </p>
+            </div>
+            <div className="Page-cta">
+              <p>
+                {cta}
+              </p>
+              <div className='LETS-TALK'>Let's Talk!</div>
             </div>
           </div>
         </div>

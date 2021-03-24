@@ -1,46 +1,54 @@
 
-.App {
+html{
   min-width: 320px;
   max-width: 1920px;
-  min-height: 100vh;
-  padding: 1.179rem 8.12vh 0 7.938rem;
+  /* min-height: 100vh; */
+  max-height: 810px;
   object-fit: contain;
+}
+
+.App {
   background-color: rgba(0, 0, 0, 0.6);
   background-image: url('./backgrounds/slide_one.jpg');
+  max-height: 810px;
+  background-size:99vmax;
+}
+
+.Layout {
+  /* display:flexbox; */
+  padding: 1.179rem 8.125rem 0 7.938rem;
 }
 
 
-/* .layout {
-  display: inherit;
-} */
 
-div {
-  max-width: 1440px;
-}
-
-.abc {
-  width: 4.728rem;
-  height: 2.363rem;
-  margin: 0 44.043rem 15.958rem 0.166rem;
+.Layout .Logo {
+  width: 75.7px;
+  height: 37.8px;
+  /* margin: 0 704.7px 255.3px 2.7px; */
   object-fit: contain;
-  background-color: white;
+  background-color: transparent;
 }
 
-.logo-contact {
-  display: flex;
-}
-
-.contact {
+.Layout .Contact {
+  float: right;
   width: 8.688rem;
   height: 2.625rem;
-  margin: 0 0 0.313rem 60.5rem;
   padding: 0.75rem 0.063rem 0.75rem 0;
   border: solid 1px white;
   background-color: transparent;
-
+  font-family: HelveticaNeue;
+  font-size: 0.938rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: white;
+  
 }  
 
-.contact p  {
+.Text {
   width: 8.625rem;
   height: 1.125rem;
   font-family: HelveticaNeue;
@@ -52,11 +60,10 @@ div {
   letter-spacing: normal;
   text-align: center;
   color: white;
-  margin: auto;
 }
 
-
-.menu {
+/* 
+.Menu {
   width: 4.563rem;
   height: 4.875rem;
   margin: 0.313rem 59.875rem 0 0;
@@ -69,17 +76,52 @@ div {
   letter-spacing: normal;
   color: white;
 }
-.menu .text-style-1 {
+.Menu .text-style-1 {
+  color: #ffc004;
+} */
+
+
+.Menu {
+  width: 5.214rem;
+  height: 5.571rem;
+  /* margin: 0.313rem 59.875rem 0 0; */
+  margin: 5px 958px 0 0;
+}
+
+.Menu a {
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  font-family: HelveticaNeue;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.86;
+  letter-spacing: normal;
+  color: white;
+}
+.Menu a:hover {
+  /* color: #ffc004; */
+}
+
+.Menu a.active {
   color: #ffc004;
 }
 
+.Page {
+  width: 90rem;
+  height: 50.625rem;
+  padding: 1.179rem 8.125rem 0 7.938rem;
+  background-color: transparent;
+}
 
-.page-header {
+.Page-header {
   display: flex;
   overflow: hidden;
 }
 
-.page-headline {
+.Page-headline {
   width: 38.25rem;
   height: 17rem;
   margin: 10.125rem 10.688rem 2.938rem 0;
@@ -94,8 +136,10 @@ div {
   overflow: hidden;
 }
 
-.page-subhead {
-  width: 22.5rem;
+
+
+.Page-subhead {
+  /* width: 22.5vw;
   height: 14.188rem;
   margin: 11.563rem 2.5rem 4.313rem 10.688rem;
   font-family: HelveticaNeue;
@@ -104,23 +148,34 @@ div {
   font-stretch: normal;
   font-style: normal;
   line-height: 1.86;
+  letter-spacing: normal; */
+  width: 360px;
+  height: 227px;
+  margin: 185px 40px 69px 171px;
+  font-family: HelveticaNeue;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.625rem;
   letter-spacing: normal;
   color: white;
   overflow: hidden;
 }
 
-.Bg {
-  width: 73.75rem;
-  height: 11.188rem;
-  margin: auto;
-  padding: 4.625rem 8.5rem 4.563rem 4.813rem;
-  background-color: white;
+.Page-cta {
+  width: 1180px;
+  height: 179px;
+  /* margin: 47px 0 0 3px; */
   display: flex;
+  overflow: hidden;
+  padding: 74px 136px 73px 77px;
+  background-color: white;
 }
 
-.cta {
-  width: 30.188rem;
-  height: 2rem;
+.Page-cta p{
+  /* width: 30.188rem;
+  height: 2rem; */
   margin: 0 13.75rem 0 0;
   font-family: HelveticaNeue;
   font-size: 1.5rem;
@@ -146,3 +201,19 @@ div {
   letter-spacing: 1px;
   color: #000000;
 }
+
+.Questions-Lets-talk {
+  width: 264px;
+  height: 22px;
+  margin: 5px 0 5px 220px;
+  padding: 0 0.7px 0 0;
+}
+
+.Arrow {
+  width: 1.375rem;
+  height: 1.375rem;
+  margin: 0 9.829rem 0 5.25rem;
+  padding: 0.313rem 0.125rem;
+}
+
+
