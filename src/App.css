@@ -2,16 +2,17 @@
 html{
   min-width: 320px;
   max-width: 1920px;
-  /* min-height: 100vh; */
-  max-height: 810px;
+  /* width: 90rem; */
+  min-height: 100vh;
   object-fit: contain;
 }
 
 .App {
   background-color: rgba(0, 0, 0, 0.6);
   background-image: url('./backgrounds/slide_one.jpg');
+  /* min-height: 100vh; */
   max-height: 810px;
-  background-size:99vmax;
+  background-size:100vw;
 }
 
 .Layout {
@@ -19,14 +20,41 @@ html{
   padding: 1.179rem 8.125rem 0 7.938rem;
 }
 
+@keyframes backdrop-slide-left {
+  0% { 
+    transform: translateX(350px);
+  }
+  100% {
+    transform: translateX(0px);
+  } 
+}
 
+@keyframes backdrop-slide-right {
+  0% { 
+    transform: translateX(-250px);
+  }
+  100% {
+    transform: translateX(0px);
+  } 
+}
+
+@keyframes backdrop-slide-down {
+  0% { 
+    transform: translateY(-250px);
+  }
+  100% {
+    transform: translateY(0px);
+  } 
+}
 
 .Layout .Logo {
-  width: 75.7px;
-  height: 37.8px;
-  /* margin: 0 704.7px 255.3px 2.7px; */
+  width: 4.728rem;
+  height: 2.363rem;
+  margin: 0;
   object-fit: contain;
   background-color: transparent;
+  position: relative;
+     animation: 4s ease backdrop-slide-down 0s 1;
 }
 
 .Layout .Contact {
@@ -45,7 +73,8 @@ html{
   letter-spacing: normal;
   text-align: center;
   color: white;
-  
+  position: relative;
+     animation: 3s ease backdrop-slide-left 0s 1;
 }  
 
 .Text {
@@ -62,30 +91,10 @@ html{
   color: white;
 }
 
-/* 
 .Menu {
   width: 4.563rem;
   height: 4.875rem;
   margin: 0.313rem 59.875rem 0 0;
-  font-family: HelveticaNeue;
-  font-size: 0.875rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.86;
-  letter-spacing: normal;
-  color: white;
-}
-.Menu .text-style-1 {
-  color: #ffc004;
-} */
-
-
-.Menu {
-  width: 5.214rem;
-  height: 5.571rem;
-  /* margin: 0.313rem 59.875rem 0 0; */
-  margin: 5px 958px 0 0;
 }
 
 .Menu a {
@@ -101,6 +110,21 @@ html{
   letter-spacing: normal;
   color: white;
 }
+
+.Menu :nth-child(1) {
+  position: relative;
+     animation: 3s ease backdrop-slide-right 0s 1;
+}
+
+.Menu :nth-child(2) {
+  position: relative;
+     animation: 3.5s ease backdrop-slide-right 0s 1;
+}
+
+.Menu :nth-child(3) {
+  position: relatve;
+     animation: 4s ease backdrop-slide-right 0s 1;
+}
 .Menu a:hover {
   /* color: #ffc004; */
 }
@@ -109,15 +133,18 @@ html{
   color: #ffc004;
 }
 
+
+
 .Page {
   width: 90rem;
   height: 50.625rem;
-  padding: 1.179rem 8.125rem 0 7.938rem;
+  padding: 0 8.125rem;
   background-color: transparent;
 }
 
 .Page-header {
   display: flex;
+  height: 30rem;
   overflow: hidden;
 }
 
@@ -130,7 +157,7 @@ html{
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1;
+  line-height: 5.25rem;
   letter-spacing: -2.2px;
   color: white;
   overflow: hidden;
@@ -139,24 +166,15 @@ html{
 
 
 .Page-subhead {
-  /* width: 22.5vw;
+  width: 22.5vw;
   height: 14.188rem;
-  margin: 11.563rem 2.5rem 4.313rem 10.688rem;
+  margin: 11.563rem 0rem;
   font-family: HelveticaNeue;
   font-size: 0.875rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.86;
-  letter-spacing: normal; */
-  width: 360px;
-  height: 227px;
-  margin: 185px 40px 69px 171px;
-  font-family: HelveticaNeue;
-  font-size: 0.875rem;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
+
   line-height: 1.625rem;
   letter-spacing: normal;
   color: white;
@@ -164,12 +182,10 @@ html{
 }
 
 .Page-cta {
-  width: 1180px;
-  height: 179px;
-  /* margin: 47px 0 0 3px; */
-  display: flex;
-  overflow: hidden;
-  padding: 74px 136px 73px 77px;
+  width: 73.75rem;
+  height: 2.49rem;
+  /* margin: 2.938rem 0 0 0.188rem; */
+  padding: 4.625rem 8.5rem 4.563rem 4.813rem;
   background-color: white;
 }
 
