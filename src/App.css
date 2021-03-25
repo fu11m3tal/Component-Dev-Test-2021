@@ -10,8 +10,8 @@ html{
 .App {
   background-color: rgba(0, 0, 0, 0.6);
   background-image: url('./backgrounds/slide_one.jpg');
-  /* min-height: 100vh; */
-  max-height: 810px;
+  /* max-width: 1440px; */
+  min-height: 100vh;
   background-size:100vw;
 }
 
@@ -144,8 +144,7 @@ html{
 
 .Page-header {
   display: flex;
-  height: 30rem;
-  overflow: hidden;
+  /* height: 30rem; */
 }
 
 .Page-headline {
@@ -160,7 +159,6 @@ html{
   line-height: 5.25rem;
   letter-spacing: -2.2px;
   color: white;
-  overflow: hidden;
 }
 
 
@@ -174,11 +172,9 @@ html{
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-
   line-height: 1.625rem;
   letter-spacing: normal;
   color: white;
-  overflow: hidden;
 }
 
 .Page-cta {

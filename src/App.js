@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import content from './content.json';
 import logo from './abc_logo.svg';
+import Page from './Page.js';
 import backgrounds from './backgrounds/slide_one.jpg';
 
 class App extends React.Component {
@@ -9,7 +10,7 @@ class App extends React.Component {
     super(props);
     this.state = { 
       content: content,
-      main: 0
+      main: 0,
      };
      this.setMain = this.setMain.bind(this);
   }
@@ -38,22 +39,7 @@ class App extends React.Component {
                 ))}
               </div>
           </div>
-          <div className='Page'>
-            <div className='Page-header'>
-              <p className="Page-headline">
-                {headline}
-              </p>
-              <p className="Page-subhead">
-                {subhead}
-              </p>
-            </div>
-            <div className="Page-cta">
-              <p>
-                {cta}
-              </p>
-              <div className='LETS-TALK'>Let's Talk!</div>
-            </div>
-          </div>
+          <Page headline={headline} subhead={subhead} cta={cta}/>
         </div>
     );
   }
