@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.30d2a006.chunk.css",
+    "main.js": "/static/js/main.62c72cca.chunk.js",
+    "main.js.map": "/static/js/main.62c72cca.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4b82c6cb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4b82c6cb.js.map",
+    "static/js/2.05fc80b7.chunk.js": "/static/js/2.05fc80b7.chunk.js",
+    "static/js/2.05fc80b7.chunk.js.map": "/static/js/2.05fc80b7.chunk.js.map",
+    "static/js/3.5c91254e.chunk.js": "/static/js/3.5c91254e.chunk.js",
+    "static/js/3.5c91254e.chunk.js.map": "/static/js/3.5c91254e.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.30d2a006.chunk.css.map": "/static/css/main.30d2a006.chunk.css.map",
+    "static/js/2.05fc80b7.chunk.js.LICENSE.txt": "/static/js/2.05fc80b7.chunk.js.LICENSE.txt",
+    "static/media/abc_logo.c72ca4e0.svg": "/static/media/abc_logo.c72ca4e0.svg",
+    "static/media/App.css": "/static/media/slide_one.df407357.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4b82c6cb.js",
+    "static/js/2.05fc80b7.chunk.js",
+    "static/css/main.30d2a006.chunk.css",
+    "static/js/main.62c72cca.chunk.js"
+  ]
+}

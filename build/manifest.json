@@ -1,0 +1,15 @@
+{
+  "short_name": "Dev Test 21",
+  "name": "Component Dev Test 2021",
+  "icons": [
+    {
+      "src": "abc_logo.svg",
+      "type": "svg",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
