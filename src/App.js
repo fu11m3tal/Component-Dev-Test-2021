@@ -3,7 +3,6 @@ import './App.css';
 import content from './content.json';
 import logo from './abc_logo.svg';
 import Page from './Page.js';
-import backgrounds from './backgrounds/slide_one.jpg';
 
 class App extends React.Component {
   constructor(props) {
